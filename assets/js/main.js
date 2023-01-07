@@ -255,3 +255,33 @@
   });
 
 })()
+
+      // Get a reference to the navbar element
+      const navbar = document.querySelector('#navbar');
+  
+      // Get all navbar items
+      const navbarItems = document.querySelectorAll("#navbar a");
+      
+      // Add a click event listener to each navbar item
+      navbarItems.forEach(item => {
+        item.addEventListener("click", e => {
+          // Remove the selected class from all navbar items
+          navbarItems.forEach(item => item.classList.remove("selected"));
+          // Add the selected class to the clicked navbar item
+          e.target.classList.add("selected");
+        });
+      });
+      
+        // Add an event listener to the navbar that listens for clicks
+        navbar.addEventListener('click', (event) => {
+          // If the clicked element is an anchor tag
+          if (event.target.tagName === 'A') {
+            // Remove the selected class from all buttons
+            navbar.querySelectorAll('a').forEach((button) => {
+              button.classList.remove('selected');
+            });
+            
+            // Add the selected class to the clicked button
+            event.target.classList.add('selected');
+          }
+        });

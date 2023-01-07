@@ -44,3 +44,4 @@ function filterProducts(e) {
         }
     });
 }
+

@@ -16,8 +16,6 @@
     box-sizing: border-box;
 }
 
-
-  
 html {
     /* font-size: 10px; */
 }
@@ -49,11 +47,19 @@ header {
 }
 
 header h1 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     line-height: 2;
     color: var(--color-primary);
 }
 
+#navbar .selected {
+    padding: 0.5em;
+  }
+
+  #navbar a.selected {
+    background-color: transparent; /* Set background color of selected element to transparent */
+  }
+  
 form input {
     width: 20rem;
     padding: 0.7rem;
@@ -140,12 +146,53 @@ form input {
     display: block;
 }
 
+
 .navbar-container {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 9999;
   }
+
+  #navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(51, 51, 51);
+    padding: 10px;
+ }
+ 
+ #navbar a {
+    padding: 0.5rem 0.75rem;  /* Adjust the padding around the elements */
+  margin: 0 0.5rem;  /* Adjust the space between the elements */
+  display: inline-block;  /* Display the elements on the same line */
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+ }
+
+ .nav-icon {
+    padding-top: 5px; /* Adjust this value to your desired amount of padding */
+  }
+
+ #navbar a {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  #navbar a i {
+    font-size: 1.5rem;
+  }
+  
+  #navbar a p {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+  
   
 
 @keyframes slide-up {

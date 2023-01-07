@@ -205,6 +205,7 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
+  justify-content: center;
   background: #0d0d0d;
   transition: all 0.5s;
   z-index: 997;
@@ -218,7 +219,8 @@ h6 {
 }
 
 #header.fixed-top {
-  background: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  background:#02569B;
 }
 
 #header .logo {
@@ -270,6 +272,45 @@ h6 {
 .navbar li {
   position: relative;
 }
+
+/* Style for selected buttons */
+#navbar a.selected {
+  background-color: rgb(212, 159, 0);
+  color: #02569B;
+}
+
+/* Style the selected navbar item */
+#navbar a.selected {
+background-color: #ddd; /* Add a background color */
+border-radius: 20px; /* Add rounded corners */
+padding: 10px 20px; /* Add padding */
+}
+
+ /* Style the navigation bar */
+ #navbar {
+      background-color: #02569B; /* Set the background color to red */
+      color: #fff;
+      /* Set the navbar to fixed position at the bottom of the page */
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      /* Add some padding and styling for the links */
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 10px 20px;
+    }
+
+    #navbar a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    #navbar a:hover {
+      color: rgb(255, 238, 0);
+    }
 
 .navbar a,
 .navbar a:focus {
@@ -361,6 +402,25 @@ h6 {
     left: -100%;
   }
 }
+
+.back-to-top {
+  background-color: #02569B; /* same color as bottom nav bar */
+  /* other existing styles for this class */
+  bottom: 50px; /* add some space between the button and the navbar */
+}
+
+#navbar {
+  height: 50px; /* decrease the height of the nav bar */
+  /* other existing styles for this element */
+}
+
+.navbar a {
+  padding: 15px; /* add padding to the elements within the nav bar */
+  font-size: 16px; /* adjust the font size */
+  /* other existing styles for this element */
+}
+
+
 
 /**
 * Mobile Navigation 
