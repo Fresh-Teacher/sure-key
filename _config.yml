@@ -1,3 +1,0 @@
-url: "https://fresh-teacher.github.io" # the base hostname & protocol for your site
-plugins:
-  - jekyll-sitemap
