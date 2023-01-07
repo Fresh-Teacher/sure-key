@@ -47,7 +47,7 @@ header {
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     line-height: 2;
     color: var(--color-primary);
 }
@@ -137,6 +137,14 @@ form input {
 .show {
     display: block;
 }
+
+.navbar-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+  
 
 @keyframes slide-up {
     0% {
