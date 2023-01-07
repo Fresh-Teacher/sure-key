@@ -59,6 +59,23 @@ header h1 {
   #navbar a.selected {
     background-color: transparent; /* Set background color of selected element to transparent */
   }
+
+  #navbar a:active {
+    /* Apply styles to the text when the element is clicked */
+    color: white;
+    text-decoration: none;
+  }
+  
+  .selected {
+    background-color: orange;
+  }
+
+  
+  #navbar a:active i {
+    /* Don't apply any styles to the icon when the element is clicked */
+    color: inherit;
+  }
+
   
 form input {
     width: 20rem;

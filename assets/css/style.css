@@ -406,7 +406,7 @@ padding: 10px 20px; /* Add padding */
 .back-to-top {
   background-color: #02569B; /* same color as bottom nav bar */
   /* other existing styles for this class */
-  bottom: 50px; /* add some space between the button and the navbar */
+  bottom: 52px; /* add some space between the button and the navbar */
 }
 
 #navbar {
